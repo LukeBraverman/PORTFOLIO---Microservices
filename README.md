@@ -1,4 +1,5 @@
-# Project Name
+## Architecture Diagram
+![Architecture Diagram](MicroserviceDesignPlans.png)
 
 ## Overview
 
@@ -8,6 +9,3 @@ This project is a SpringBoot-based microservice application designed to handle v
 - **Orchestrator:** Manages the workflow by coordinating calls to the VOD and VIDEO microservices.
 - **VOD Microservice:** Handles operations related to video-on-demand functionality.
 - **VIDEO Microservice:** Manages video data and related operations.
-
-## Architecture Diagram
-![Architecture Diagram](MicroserviceDesignPlans.png)
