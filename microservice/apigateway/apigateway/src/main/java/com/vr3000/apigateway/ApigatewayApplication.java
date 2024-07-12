@@ -25,15 +25,14 @@ public class ApigatewayApplication {
 										.setFallbackUri("forward:/fallback")
 										.setRouteId("fallbackRoute")))
 						.uri("http://localhost:8099"))
+				.route(p -> p
+						.path("/Vod")
+						.filters(f -> f
+								.circuitBreaker(config -> config
+										.setName("mycmd")
+										.setFallbackUri("forward:/fallback")
+										.setRouteId("fallbackRoute")))
+						.uri("http://localhost:8099"))
 				.build();
 	}
-
-//	@Bean
-//	public RouteLocator fallbackRoute(RouteLocatorBuilder builder) {
-//		return builder.routes()
-//				.route(p -> p
-//						.path("/fallback")
-//						.uri("http://localhost:8099/fallback"))
-//				.build();
-//	}
 }
