@@ -10,4 +10,4 @@ This project is a SpringBoot-based microservice application designed to handle v
 - **VIDEO Microservice:** Manages video data and related operations.
 
 ## Architecture Diagram
-![Architecture Diagram](MicroserviceDesignPlan.png)
+![Architecture Diagram](images/MicroserviceDesignPlans.png)
